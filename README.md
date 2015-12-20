@@ -5,6 +5,8 @@ The motivation for creating this bundle is to have NiFi communicate with a MapR 
 
 ## How To Use
 
+*Works with maven version 3.3.9 or above.*
+
 The main file that will need updating is the pom.xml in the nifi-mapr-nar directory. A property called mapr.version will need updating with the version of MapR that NiFi will be communicating with.
 
 **Note:** NiFi verision can be changed if necessary in the pom.xml
