@@ -7,7 +7,7 @@ The motivation for creating this bundle is to have NiFi communicate with a MapR 
 
 1. Install MapR client on new linux server: [mapr-client.md](./mapr-client.md)
 2. Set auth login config in $NIFI_HOME/conf/bootstrap.conf
-   java.arg.15=-Djava.security.auth.login.config=/opt/mapr/conf/mapr.login.conf
+    `java.arg.15=-Djava.security.auth.login.config=/opt/mapr/conf/mapr.login.conf`
 
 
 ## How To Use
