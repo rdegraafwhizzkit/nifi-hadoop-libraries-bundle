@@ -4,9 +4,10 @@
 The motivation for creating this bundle is to have NiFi communicate with a MapR cluster. MapR uses different versions of the hadoop libraries and different configurations are needed.
 
 ## MapR hadoop distribution and NiFi one-time setup
-    1. Install MapR client on new linux server: [mapr-client.md](./mapr-client.md)
-    2. Set auth login config in $NIFI_HOME/conf/bootstrap.conf
-       java.arg.15=-Djava.security.auth.login.config=/opt/mapr/conf/mapr.login.conf
+
+1. Install MapR client on new linux server: [mapr-client.md](./mapr-client.md)
+2. Set auth login config in $NIFI_HOME/conf/bootstrap.conf
+   java.arg.15=-Djava.security.auth.login.config=/opt/mapr/conf/mapr.login.conf
 
 
 ## How To Use
