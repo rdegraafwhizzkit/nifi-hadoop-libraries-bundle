@@ -12,7 +12,8 @@ Instructions to setup MapR client on fresh linux server.
 2. install mapr-client
 
     ```bash
-    sudo rpm -Uvh mapr-client-4.0.2.29870.GA-1.x86_64.rpm
+    // sudo rpm -Uvh mapr-client-4.0.2.29870.GA-1.x86_64.rpm
+    sudo rpm -Uvh mapr-client-5.1.0.37543.GA-1.x86_64.rpm
     ```
 
 3. connect mapr-client to Hadoop cluster. 
