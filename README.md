@@ -19,7 +19,7 @@ The main file that will need updating is the pom.xml in the nifi-mapr-nar direct
 
 **Note:** NiFi verision can be changed if necessary in the pom.xml
 
-Run a mvn clean install in the nifi-mapr-nar directory and once the build completes successfully the target NiFi bundle will be located in the target directory. The file will be called **nifi-hadoop-libraries-nar-0.3.0.nar**
+Run a `mvn clean install` in the nifi-mapr-nar directory and once the build completes successfully the target NiFi bundle will be located in the target directory. The file will be called **nifi-hadoop-libraries-nar-0.x.x.nar**
 
 Copy the nar file to the NiFi environment and replace it with the existing hadoop libraries under **$NIFI_HOME/lib** and restart NiFi.
 
