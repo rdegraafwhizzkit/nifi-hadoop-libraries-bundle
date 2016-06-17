@@ -23,7 +23,7 @@ Instructions to setup MapR client on fresh linux server.
     sudo  /opt/mapr/server/configure.sh -c -N datalake_qa -C hadoop1:7022,hadoop2:7022,hadoop3:7022-Z zk1:5000,zk2:5000,zk3:5000 -HS hadoop1
     ```
 
-4. configure core-site.xml
+4. configure core-site.xml (Skip: This step not required if you are using secure MapR Cluster)
 
     ```bash
     sudo vi /opt/mapr/hadoop/hadoop-2.5.1/etc/hadoop/core-site.xml
