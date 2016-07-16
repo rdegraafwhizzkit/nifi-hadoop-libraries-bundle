@@ -35,8 +35,16 @@ Clone NiFi 0.x branch
 ```
 # git clone https://github.com/apache/nifi.git
 git clone http://git-wip-us.apache.org/repos/asf/nifi.git
+# git checkout rel/nifi-0.7.0
 git checkout -b 0.x origin/0.x
 ```
+
+### Remove
+
+> `inotify` Hadoop API is still not compatible with MapR. 
+Remove `org.apache.nifi.processors.hadoop.inotify.GetHDFSEvents`
+from `nifi/nifi-nar-bundles/nifi-hadoop-bundle/nifi-hdfs-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor`
+and all references to `org.apache.nifi.processors.hadoop.inotify` package from src `main` and `test` folders
 
 ### Build 
 
