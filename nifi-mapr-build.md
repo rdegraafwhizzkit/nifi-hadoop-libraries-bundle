@@ -46,6 +46,29 @@ Remove `org.apache.nifi.processors.hadoop.inotify.GetHDFSEvents`
 from `nifi/nifi-nar-bundles/nifi-hadoop-bundle/nifi-hdfs-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor`
 and all references to `org.apache.nifi.processors.hadoop.inotify` package from src `main` and `test` folders
 
+### Add (optional)
+
+If you want to add distributed-cache support for scripting processors as described [here](https://github.com/xmlking/nifi-scripting#how-to-use-distributed-cache-in-scripting-processors)
+
+Add this dependency to `nifi/nifi-nar-bundles/nifi-scripting-bundle/nifi-scripting-nar/pom.xml`
+
+```xml
+<dependency>
+    <groupId>org.apache.nifi</groupId>
+    <artifactId>nifi-standard-services-api-nar</artifactId>
+    <type>nar</type>
+</dependency>
+```
+
+Add this dependency to `nifi/nifi-nar-bundles/nifi-scripting-bundle/nifi-scripting-processors/pom.xml`
+
+```xml
+<dependency>
+    <groupId>org.apache.nifi</groupId>
+    <artifactId>nifi-distributed-cache-client-service-api</artifactId>
+</dependency>
+```
+
 ### Build 
 
 ```
