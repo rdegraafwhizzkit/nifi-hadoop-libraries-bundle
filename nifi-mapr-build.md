@@ -67,6 +67,18 @@ Add this dependency to `nifi/nifi-nar-bundles/nifi-scripting-bundle/nifi-scripti
     <groupId>org.apache.nifi</groupId>
     <artifactId>nifi-distributed-cache-client-service-api</artifactId>
 </dependency>
+<dependency>
+    <groupId>org.apache.nifi</groupId>
+    <artifactId>nifi-ssl-context-service-api</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.apache.nifi</groupId>
+    <artifactId>nifi-http-context-map-api</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.apache.nifi</groupId>
+    <artifactId>nifi-dbcp-service-api</artifactId>
+</dependency>
 ```
 
 ### Build 
