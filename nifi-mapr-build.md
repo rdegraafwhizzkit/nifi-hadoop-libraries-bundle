@@ -57,9 +57,8 @@ change your ~/.m2/settings.xml so that you have:
 Clone NiFi 0.x branch 
 
 ```
-# git clone https://github.com/apache/nifi.git
 git clone http://git-wip-us.apache.org/repos/asf/nifi.git
-# git checkout rel/nifi-0.7.0
+# git checkout -b 0.x origin/rel/nifi-0.7.0
 git checkout -b 0.x origin/0.x
 ```
 
