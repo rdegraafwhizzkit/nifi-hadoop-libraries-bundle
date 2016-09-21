@@ -33,7 +33,6 @@ Get the **core-site.xml** from the MapR environment, make the file readable by t
 ...
 <property> 
   <name>fs.defaultFS</name>
-  <value>maprfs://<cldbhost>:<port></value>
   <value>maprfs:///</value>
 </property>
 ...
