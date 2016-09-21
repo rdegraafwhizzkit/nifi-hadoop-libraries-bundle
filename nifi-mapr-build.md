@@ -1,5 +1,29 @@
 Build Full NiFi with MapR Dependencies
 ======================================
+
+## If using MapR > 1.0.0
+
+### Clone
+```
+git clone http://git-wip-us.apache.org/repos/asf/nifi.git
+git checkout -b 1.0.0 origin/rel/nifi-1.0.0
+```
+
+```
+cd nifi
+# assuming you are running 5.1 - otherwise check the docs for the appropriate version
+# for  mapr 4.0.2 use version : 2.5.1-mapr-1503
+mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.7.0-mapr-1602
+```
+
+### Deploy
+final build will be created at `nifi-assembly/target/nifi-0.x.0-SNAPSHOT-bin.zip`
+
+
+
+
+## If using NiFi < 1.0.0
+### Create MapR maven profile
 change your ~/.m2/settings.xml so that you have:
 
 ```xml
@@ -58,3 +82,4 @@ mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.5.1-mapr-1503
 
 ### Deploy
 final build will be created at `nifi-assembly/target/nifi-0.x.0-SNAPSHOT-bin.zip`
+
