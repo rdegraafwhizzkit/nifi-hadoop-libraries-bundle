@@ -11,13 +11,13 @@ git checkout -b 1.0.0 origin/rel/nifi-1.0.0
 
 ```
 cd nifi
-# assuming you are running 5.1 - otherwise check the docs for the appropriate version
+# assuming you are running MapR 5.1 - otherwise check the docs for the appropriate version
 # for  mapr 4.0.2 use version : 2.5.1-mapr-1503
 mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.7.0-mapr-1602
 ```
 
 ### Deploy
-final build will be created at `nifi-assembly/target/nifi-0.x.0-SNAPSHOT-bin.zip`
+final build will be created at `nifi-assembly/target/nifi-1.x.0-SNAPSHOT-bin.zip`
 
 
 
@@ -74,10 +74,9 @@ and all references to `org.apache.nifi.processors.hadoop.inotify` package from s
 
 ```
 cd nifi
-# assuming you are running 5.1 - otherwise check the docs for the appropriate version
+# assuming you are running MapR 5.1 - otherwise check the docs for the appropriate version
 # for  mapr 4.0.2 use version : 2.5.1-mapr-1503
 mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.7.0-mapr-1602
-mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.5.1-mapr-1503
 ```
 
 ### Deploy
