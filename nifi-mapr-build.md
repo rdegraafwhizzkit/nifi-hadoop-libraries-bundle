@@ -1,7 +1,7 @@
 Build Full NiFi with MapR Dependencies
 ======================================
 
-## If using MapR > 1.0.0
+## If using NiFI > 1.0.0
 
 ### Clone
 ```
