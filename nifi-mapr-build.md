@@ -6,7 +6,7 @@ Build Full NiFi with MapR Dependencies
 ### Clone
 ```
 git clone http://git-wip-us.apache.org/repos/asf/nifi.git
-git checkout -b 1.0.0 origin/rel/nifi-1.0.0
+git checkout -b 1.0.0 rel/nifi-1.0.0
 ```
 
 ```
