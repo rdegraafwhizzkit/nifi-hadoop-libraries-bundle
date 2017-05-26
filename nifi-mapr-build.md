@@ -4,8 +4,8 @@ Build Full NiFi with MapR Dependencies
 ### Clone
 ```
 git clone https://git-wip-us.apache.org/repos/asf/nifi.git
-# change branch to latest stable nifi release (if you dont want master branch)
-git checkout -b 1.2.0 rel/nifi-1.2.0
+# change branch to latest stable nifi release (if you dont want master branch) - I prefer master branch
+# git checkout -b 1.2.0 rel/nifi-1.2.0
 ```
 
 ```
