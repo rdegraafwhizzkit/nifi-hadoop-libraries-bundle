@@ -13,6 +13,8 @@ cd nifi
 # assuming you are running MapR 5.2 - otherwise check the docs for the appropriate version
 MAVEN_OPTS="-Xms1024m -Xmx3076m -XX:MaxPermSize=256m"
 mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.7.0-mapr-1607
+# if you want to use NiFI with MapR-Streams
+mvn -T 2.0C clean install -DskipTests -Pmapr -Dhadoop.version=2.7.0-mapr-1707 -Dkafka9.version=0.9.0.0-mapr-1703
 ```
 
 ### Deploy
